@@ -11,6 +11,7 @@ import java.util.Map;
 public class CloudinaryConfig {
     @Bean
     public Cloudinary cloudinary() {
+        @SuppressWarnings("unchecked")
         Map<String, String> config = ObjectUtils.asMap(
                 "cloud_name", "dv1yqet3t",
                 "api_key", "372238824487286",

@@ -24,8 +24,8 @@ public class RoomController {
     @Autowired
     private IRoomService roomService;
 
-    @Autowired
-    private IBookingService bookingService;
+    // @Autowired
+    // private IBookingService bookingService;
 
     @PostMapping("/add")
     @PreAuthorize("hasAuthority('ADMIN')")

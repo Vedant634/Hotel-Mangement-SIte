@@ -14,11 +14,13 @@ public class CloudinaryService {
 
     private final Cloudinary cloudinary;
 
+    @Autowired
     public CloudinaryService(Cloudinary cloudinary) {
         this.cloudinary = cloudinary;
     }
     public String upload(MultipartFile file) {
         try {
+            @SuppressWarnings("unchecked")
             Map<String,Object> uploadResult =  cloudinary.uploader().upload(file.getBytes(), Map.of());
             return uploadResult.get("url").toString();
         } catch (IOException e) {
