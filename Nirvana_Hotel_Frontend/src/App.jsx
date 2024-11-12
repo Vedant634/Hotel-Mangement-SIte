@@ -9,7 +9,7 @@ import HomePage from './component/home/HomePage'
 import AllRoomsPage from './component/booking/AllRoomPages'
 import FindBookingPage from './component/booking/FindBookingPage'
 
-import RegisterPage from './component/auth/RegisterPage'
+
 import LoginPage from './component/auth/LoginPage'
 import ProfilePage from './component/profile/ProfilePage'
 import EditProfilePage from './component/profile/EditProfilePage'
@@ -35,7 +35,7 @@ function App() {
                     <Route exact path='/rooms' element={<AllRoomsPage />} />
                     <Route exact path='/find-bookings' element={<FindBookingPage />} />
                     <Route exact path='/login' element={<LoginPage />} />
-                    <Route exact path='/register' element={<RegisterPage />} />
+                    
                     <Route exact path="/room-details-book/:roomId" element={<ProtectedRoute element={<RoomDetails />} />} />
                     <Route exact path='/profile' element={<ProtectedRoute element={<ProfilePage />} />} />
                     <Route exact path='/edit-profile' element={<ProtectedRoute element={<EditProfilePage />} />} />
